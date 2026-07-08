@@ -8,7 +8,6 @@ import trio from "@/assets/trio.jpg";
 import lineup from "@/assets/lineup.jpg";
 import thumb1 from "@/assets/thumb1.jpg";
 import thumb2 from "@/assets/thumb2.jpg";
-import thumb2 from "@/assets/thumb2.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
