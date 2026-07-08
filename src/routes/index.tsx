@@ -262,8 +262,6 @@ function AllInOne() {
           </Reveal>
         </div>
 
-          </Reveal>
-        </div>
       </div>
     </section>
   );
