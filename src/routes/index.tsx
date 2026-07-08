@@ -198,9 +198,18 @@ function AllInOne() {
   return (
     <section className="px-6 py-24 md:px-12 md:py-32">
       <div className="mx-auto max-w-7xl">
-        <Reveal>
-          <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-2 md:gap-16">
-            <div>
+        {/* Top band: heading left, trio image right, giant "new" behind */}
+        <div className="relative">
+          <h3
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 -bottom-4 select-none font-serif italic leading-none text-center text-[color:var(--moss)]/25"
+            style={{ fontSize: "clamp(9rem, 32vw, 28rem)" }}
+          >
+            new
+          </h3>
+
+          <div className="relative grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
+            <Reveal>
               <p className="mb-6 text-[11px] font-medium uppercase tracking-[0.3em] text-muted-foreground">
                 — Nº 03
               </p>
@@ -208,38 +217,30 @@ function AllInOne() {
                 All-in-One <br />
                 <em className="italic">Skincare</em> Complex
               </h2>
-            </div>
-            <p className="max-w-md text-base leading-relaxed text-muted-foreground md:justify-self-end">
-              A three-step ritual — cleanse, replenish, protect — engineered as one continuous
-              formula. Fewer bottles, more results, an easier morning.
-            </p>
+              <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
+                Multifunctional bio-designed to simplify your daily routine without compromising results.
+              </p>
+            </Reveal>
+
+            <Reveal delay={120}>
+              <div className="overflow-hidden rounded-[2rem] shadow-sm">
+                <img
+                  src={trio}
+                  alt="Three skincare bottles arranged on beige backdrop"
+                  loading="lazy"
+                  width={1400}
+                  height={1000}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </Reveal>
           </div>
-        </Reveal>
+        </div>
 
-        <Reveal delay={100}>
-          <div className="mt-14 overflow-hidden rounded-[2rem]">
-            <img
-              src={trio}
-              alt="Three skincare bottles arranged on beige backdrop"
-              loading="lazy"
-              width={1400}
-              height={1000}
-              className="h-full w-full object-cover"
-            />
-          </div>
-        </Reveal>
-
-        <div className="relative mt-24 md:mt-40">
-          <h3
-            aria-hidden
-            className="pointer-events-none select-none font-serif italic text-foreground/[0.07] leading-none text-center"
-            style={{ fontSize: "clamp(10rem, 36vw, 32rem)" }}
-          >
-            new
-          </h3>
-
+        {/* Bottom band: lineup image left, description + CTA right */}
+        <div className="mt-16 grid grid-cols-1 items-end gap-10 md:mt-24 md:grid-cols-[1.4fr_1fr] md:gap-16">
           <Reveal>
-            <div className="-mt-[18vw] overflow-hidden rounded-[2rem] md:-mt-[22vw]">
+            <div className="overflow-hidden rounded-[2rem]">
               <img
                 src={lineup}
                 alt="Four skincare bottles lined up"
@@ -252,14 +253,15 @@ function AllInOne() {
           </Reveal>
 
           <Reveal delay={120}>
-            <div className="mt-14 flex flex-col items-center gap-4 text-center">
-              <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-                Twelve new formulas. One quiet routine. Now available in the moss atelier.
-              </p>
+            <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
+              Each formula combines hydration, barrier support, and skin-balancing ingredients to work in one effortless step. The collective focuses on smart minimalism — fewer products, more impact, and consistent care for healthy-looking skin.
+            </p>
+            <div className="mt-8">
               <PillButton>Catalog</PillButton>
             </div>
           </Reveal>
         </div>
+
       </div>
     </section>
   );
