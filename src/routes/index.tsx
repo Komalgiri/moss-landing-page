@@ -8,7 +8,6 @@ import trio from "@/assets/trio.jpg";
 import lineup from "@/assets/lineup.jpg";
 import thumb1 from "@/assets/thumb1.jpg";
 import thumb2 from "@/assets/thumb2.jpg";
-import thumb3 from "@/assets/thumb3.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -168,11 +167,10 @@ function PureCare() {
             and blended in small batches so every drop stays potent.
           </p>
 
-          <div className="mt-10 grid grid-cols-3 gap-3 max-w-sm">
+          <div className="mt-10 grid grid-cols-2 gap-4 max-w-sm">
             {[
-              { src: thumb1, label: "Barrier balm" },
-              { src: thumb2, label: "Renewal oil" },
-              { src: thumb3, label: "Body milk" },
+              { src: thumb1, label: "Botanical balm" },
+              { src: thumb2, label: "Ceramide jar" },
             ].map((p) => (
               <div key={p.label} className="group cursor-pointer">
                 <div className="aspect-square overflow-hidden rounded-2xl bg-secondary">
@@ -189,6 +187,7 @@ function PureCare() {
               </div>
             ))}
           </div>
+
         </Reveal>
       </div>
     </section>
