@@ -43,30 +43,32 @@
 :root {
   --radius: 0.75rem;
 
-  /* moss brand palette */
-  --cream: oklch(0.955 0.015 85);        /* #f5f1ea */
-  --moss: oklch(0.60 0.045 130);         /* #7a8a6a */
-  --moss-dark: oklch(0.48 0.045 130);
-  --ink: oklch(0.22 0.02 60);
+  /* moss brand palette - DARK THEME (Warm Espresso/Taupe) */
+  --cream: oklch(0.95 0.02 85);          /* Warm cream text */
+  --moss: oklch(0.70 0.05 130);          /* Sage green accent */
+  --moss-dark: oklch(0.60 0.05 130);     /* Slightly darker for hover */
+  
+  --ink: oklch(0.24 0.02 70);            /* Deep warm espresso/taupe background */
+  --dark-surface: oklch(0.28 0.02 70);   /* Slightly lighter taupe for sections */
 
-  --background: var(--cream);
-  --foreground: var(--ink);
-  --card: oklch(0.98 0.008 85);
-  --card-foreground: var(--ink);
-  --popover: var(--cream);
-  --popover-foreground: var(--ink);
+  --background: var(--ink);
+  --foreground: var(--cream);
+  --card: var(--dark-surface);
+  --card-foreground: var(--cream);
+  --popover: var(--ink);
+  --popover-foreground: var(--cream);
   --primary: var(--moss);
-  --primary-foreground: oklch(0.98 0.005 85);
-  --secondary: oklch(0.92 0.02 85);
-  --secondary-foreground: var(--ink);
-  --muted: oklch(0.92 0.015 85);
-  --muted-foreground: oklch(0.45 0.02 60);
+  --primary-foreground: var(--ink);
+  --secondary: var(--dark-surface);
+  --secondary-foreground: var(--cream);
+  --muted: var(--dark-surface);
+  --muted-foreground: oklch(0.75 0.01 130);
   --accent: var(--moss);
-  --accent-foreground: oklch(0.98 0.005 85);
+  --accent-foreground: var(--ink);
   --destructive: oklch(0.55 0.22 27);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.88 0.02 85);
-  --input: oklch(0.88 0.02 85);
+  --border: oklch(0.28 0.01 130);
+  --input: oklch(0.28 0.01 130);
   --ring: var(--moss);
 }
 
