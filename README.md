@@ -4,7 +4,7 @@
   ### Luxury Botanical Skincare & High-End Wellness Experience
 
   <p align="center">
-    <strong>A modern, editorial-grade skincare landing experience engineered with TanStack Start, React 19, TypeScript, and Tailwind CSS v4.</strong>
+    <strong>An editorial-grade, motion-driven luxury skincare web application engineered with TanStack Start, React 19, TypeScript, and Tailwind CSS v4.</strong>
   </p>
 
   <p align="center">
@@ -38,39 +38,45 @@
     <a href="#-available-for-hire">Hire Me</a>
   </p>
 
+  <br />
+
+  <p align="center">
+    <img src="src/assets/screenshots/01-hero-section.png" alt="MOSS Hero Section — Beauty That Feels as Good as It Looks" width="100%" />
+  </p>
+
 </div>
 
 ---
 
 ## 🌟 Executive Overview
 
-**MOSS** is an editorial-first skincare landing page inspired by luxury apothecary and clean botanical wellness brands (such as Aesop, Furtuna Skin, and Le Labo). Designed and developed to demonstrate **advanced frontend engineering**, **creative art direction**, and **pixel-perfect UI execution**, this project shows how to translate luxury branding into a responsive, high-performance web experience.
+**MOSS** is an editorial-first skincare landing experience inspired by luxury apothecary and clean botanical wellness brands (such as Aesop, Furtuna Skin, and Le Labo). Designed and developed to showcase **advanced frontend engineering**, **creative art direction**, and **pixel-perfect UI execution**, this project shows how to translate luxury branding into a responsive, high-performance web experience.
 
 Rather than relying on generic landing page templates or standard component blocks, MOSS features:
 - **Warm, earthy OKLCH color science** with tailored espresso taupes (`--ink`), soft creams (`--cream`), and muted sage tones (`--moss`).
 - **High-fashion editorial typography** combining `Playfair Display` with geometric sans `Inter`.
 - **Custom viewport scroll reveals** powered by lightweight `IntersectionObserver` physics.
-- **Asymmetric Bento Grids**, floating glassmorphism product badges, and organic wave section transitions.
+- **Asymmetric Bento Grids**, floating glassmorphism social proof badges, and organic wave section transitions.
 
 ---
 
 ## 📸 Visual Showcase
 
-### 1. Editorial Product Gallery & Social Proof
-> *High-contrast editorial header paired with interactive floating review badges, pill photo cutouts, and hero product staging.*
+### 1. Hero Landing Section: *"Beauty That Feels as Good as It Looks"*
+> *High-contrast editorial typography paired with floating review bubbles, pill photo cutouts, and hero product staging for Velvet Camellia Cream.*
 
 <p align="center">
-  <img src="src/assets/screenshots/01-product-showcase.png" alt="MOSS Product Gallery & Social Proof" width="100%" />
+  <img src="src/assets/screenshots/01-hero-section.png" alt="MOSS Hero Section" width="100%" />
 </p>
 
-- **Typography Mastery:** Oversized high-contrast serif headlines with responsive leading.
-- **Floating Social Proof Badges:** Layered micro-cards with customer ratings, subtle drop-shadows, and hover physics.
-- **Hero Product Focus:** Luminosity-blended studio product staging designed for luxury eCommerce conversion.
+- **Editorial Typography:** High-contrast serif headlines with responsive line-height and generous negative space.
+- **Floating Social Proof Cards:** Layered interactive micro-cards with customer ratings, subtle drop-shadows, and smooth hover physics.
+- **Product Staging:** Luminosity-blended studio product staging for *AURA BOTANICA Velvet Camellia Cream* designed for high-conversion luxury retail.
 
 ---
 
 ### 2. "Purely Beneficial" Bento Grid
-> *Asymmetric 3-column layout highlighting brand pillars: Vegan sourcing, clinical backing, hydration, and clean formulation.*
+> *Asymmetric 3-column layout highlighting core brand pillars: Vegan formulation, clinical testing, deep hydration, and clean ingredients.*
 
 <p align="center">
   <img src="src/assets/screenshots/02-benefits-bento-grid.png" alt="MOSS Benefits Bento Grid" width="100%" />
@@ -82,11 +88,23 @@ Rather than relying on generic landing page templates or standard component bloc
 
 ---
 
-### 3. "All-in-One Skincare Complex" & Typographic Watermark
-> *Ghost watermark typography layered beneath dual product compositions and interactive catalog CTAs.*
+### 3. Product Gallery & Social Proof Showcase
+> *Detailed view of the product composition, verified 5-star customer ratings, and pill avatar accents.*
 
 <p align="center">
-  <img src="src/assets/screenshots/03-all-in-one-complex.png" alt="MOSS All-in-One Complex" width="100%" />
+  <img src="src/assets/screenshots/03-product-showcase.png" alt="MOSS Product Gallery & Social Proof Showcase" width="100%" />
+</p>
+
+- **Customer Trust Indicators:** Verified customer feedback (`"A miracle skincare solution. High quality, effective, simply perfect."`) layered directly onto the composition.
+- **Tactile UI Elements:** Reusable pill button CTA with hover scaling and border highlights.
+
+---
+
+### 4. "All-in-One Skincare Complex" & Typographic Watermark
+> *Ghost watermark typography layered beneath dual product lineups and catalog navigation.*
+
+<p align="center">
+  <img src="src/assets/screenshots/04-all-in-one-complex.png" alt="MOSS All-in-One Complex" width="100%" />
 </p>
 
 - **Watermark Layering:** Subtle backdrop typography (*"new"*) rendered at fluid viewport sizes (`clamp(12rem, 35vw, 36rem)`) with zero layout interference (`pointer-events-none`).
@@ -111,46 +129,42 @@ Rather than relying on generic landing page templates or standard component bloc
 
 ## 🌿 Key Features & Page Sections
 
-### 1. Full-Bleed Hero Landing (`Hero.tsx`)
-- Full-viewport responsive height (`100svh`) featuring high-resolution botanical imagery.
-- Screen-blend oversized brand display title (`moss`) scaling seamlessly across all screen sizes.
-- Floating glassmorphism navigation bar with transparent-to-solid transitions and direct anchor navigation.
+### 1. Hero Landing Section
+- Editorial headline: *"Beauty That Feels as Good as It Looks"*.
+- Featured hero product: *Aura Botanica Velvet Camellia Cream*.
+- Floating social proof review badges with verified 5-star customer ratings and pill portrait cutouts.
+- Direct "Shop now" pill action button.
 
-### 2. All-in-One Skincare Complex (`AllInOne.tsx`)
-- Oversized typographic watermark background (*"new"*) adding depth without cluttering readability.
-- Dual-stagger product showcase highlighting multifunctional formulas and minimal skincare routines.
-
-### 3. 3D Product Highlight Spec (`ProductHighlight.tsx`)
-- Floating frosted-glass spec card (`backdrop-blur-2xl`) featuring ingredient tags, localized pricing, and quick-action purchase button.
-- Smooth hover scaling on product packaging rendering high tactile quality.
-
-### 4. Brand Philosophy & Ritual (`Philosophy.tsx`)
-- Editorial layout emphasizing the *"healthy skin & hair"* ethos.
-- Warm textured ceramic jar imagery coupled with minimalist typographic storytelling.
-
-### 5. Pure Care by Nature (`PureCare.tsx`)
-- Multi-aspect ratio image composition showing minimalist product packaging in real-world lifestyle lighting.
-
-### 6. Bento Grid Benefits (`Benefits.tsx`)
+### 2. Bento Grid Benefits (`Benefits.tsx`)
 - Interactive cards showcasing 100% Vegan, Clinically Proven, Deep Hydration, and Clean Formulation.
 - Subtle card zoom and gradient overlays on hover.
 
-### 7. Editorial Product Gallery & Testimonials (`ProductGallery.tsx`)
-- High-impact headline: *"Beauty That Feels as Good as It Looks"*.
-- Layered social proof bubbles featuring verified 5-star customer reviews and circular model portraits.
-- Hero product staging for *Aura Botanica Velvet Camellia Cream*.
+### 3. All-in-One Skincare Complex (`AllInOne.tsx`)
+- Oversized typographic watermark background (*"new"*) adding depth without cluttering readability.
+- Dual-stagger product showcase highlighting multifunctional formulas and minimal skincare routines.
 
-### 8. Founder's Note (`Founder.tsx`)
+### 4. 3D Product Highlight Spec (`ProductHighlight.tsx`)
+- Floating frosted-glass spec card (`backdrop-blur-2xl`) featuring ingredient tags, localized pricing, and quick-action purchase button.
+- Smooth hover scaling on product packaging rendering high tactile quality.
+
+### 5. Brand Philosophy & Ritual (`Philosophy.tsx`)
+- Editorial layout emphasizing the *"healthy skin & hair"* ethos.
+- Warm textured ceramic jar imagery coupled with minimalist typographic storytelling.
+
+### 6. Pure Care by Nature (`PureCare.tsx`)
+- Multi-aspect ratio image composition showing minimalist product packaging in real-world lifestyle lighting.
+
+### 7. Founder's Note (`Founder.tsx`)
 - Authentic brand connection featuring portrait imagery and a personal message from founder Elena Rostova.
 
-### 9. Curated Instagram Community Grid (`InstaFeed.tsx`)
+### 8. Curated Instagram Community Grid (`InstaFeed.tsx`)
 - Asymmetric 2x2 and 1x1 photo grid replicating a live lifestyle social feed.
 - Hover-activated branded overlays with smooth icon reveal transitions.
 
-### 10. Organic Wave Transitions (`Wave.tsx`)
+### 9. Organic Wave Transitions (`Wave.tsx`)
 - SVG organic wave dividers replacing harsh geometric borders, maintaining a gentle, serene rhythm between sections.
 
-### 11. Community Newsletter & Footer (`Newsletter.tsx` & `Footer.tsx`)
+### 10. Community Newsletter & Footer (`Newsletter.tsx` & `Footer.tsx`)
 - Accessible email capture form with focused state styling.
 - Comprehensive footer with secondary navigation, journal links, and copyright metadata.
 
@@ -195,6 +209,10 @@ moss-landing-page/
 ├── src/
 │   ├── assets/               # Brand logos, high-res photography, and UI captures
 │   │   ├── screenshots/      # Organized high-res README showcase captures
+│   │   │   ├── 01-hero-section.png
+│   │   │   ├── 02-benefits-bento-grid.png
+│   │   │   ├── 03-product-showcase.png
+│   │   │   └── 04-all-in-one-complex.png
 │   │   └── logo.svg          # Vector brand logo
 │   ├── components/
 │   │   ├── Reveal.tsx        # IntersectionObserver scroll-trigger animation wrapper
