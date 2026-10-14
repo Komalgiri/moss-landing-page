@@ -19,22 +19,21 @@ function Index() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Hero />
+      <AllInOne />
+      <ProductHighlight />
       <Wave />
       <Philosophy />
       <Wave />
       <PureCare />
       <Wave />
       <Benefits />
-      <Wave />
-      <AllInOne />
-      <Wave />
       <ProductGallery />
       <Wave />
       <Founder />
       <Wave />
       <InstaFeed />
       <Wave />
-      <ProductHighlight />
+      
       <Wave />
       <Newsletter />
       <Wave />
